@@ -1,0 +1,48 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    padding: 1rem;
+
+    input {
+        font-size: 1em;
+        padding: 2ch;
+        border-radius: 15px;
+    }
+
+    button {
+        padding: 1ch;
+        border-radius: 10px;
+    }
+}
+
+#weatherContainer {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+
+    .day {
+        background-color: #a3aebf;
+        border-radius: 10px;
+        transition: transform 0.3s ease; 
+    }
+
+    .day:hover {
+        transform: scale(1.1); 
+    }
+}
